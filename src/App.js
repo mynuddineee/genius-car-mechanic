@@ -9,6 +9,8 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import AddService from './Pages/AddService/AddService';
 import ManageServices from './Pages/ManageServices/ManageServices';
+import Orders from './Pages/Orders/Orders';
+import MyOrders from './Pages/My Orders/MyOrders';
 
 
 function App() {
@@ -37,6 +39,12 @@ function App() {
             <Route path ="/manageServices">
               <ManageServices></ManageServices>
             </Route>
+            <PrivateRoute path ="/orders">
+              <Orders></Orders>
+            </PrivateRoute>
+            <PrivateRoute path ="/myOrders">
+              <MyOrders></MyOrders>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

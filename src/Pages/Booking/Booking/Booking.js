@@ -11,9 +11,12 @@ const Booking = () => {
     .then(res => res.json())
     .then(data => setService(data))
    },[])
+   
     return (
         <div>
-            <h2>Deatail of: {service.name}</h2>
+            <h2>Hello</h2>
+            
+            
             <h2>this is booking: {serviceId}</h2>
         </div>
     );
